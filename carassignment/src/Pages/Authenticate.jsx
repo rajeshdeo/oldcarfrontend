@@ -15,19 +15,23 @@ const Authenticate = () => {
     const loginState={ email:"", password:""}
     const [register,setRegister]=useState(registerState)
     const [login,setLogin]=useState(loginState)
+    
    // console.log('login:', login)
     
     const handleRegister=(e)=>{
         setRegister({...register, [e.target.name]: e.target.value })
+        
     }
     const handleLogin=(e)=>{
         setLogin({...login, [e.target.name]: e.target.value })
+        
     }
     const submitRegister=(e)=>{
       e.preventDefault()
       if(register!=registerState){
         dispatch(registerFun(register))
         setRegistered(true)
+        
       }
     }
     const submitLogin=(e)=>{
@@ -36,13 +40,16 @@ const Authenticate = () => {
         dispatch(loginFun(login))
       }
     }
-    if(store.isAuth) navigate(`/`)
+    if(store.isAuth){
+      navigate(`/`)
+      
+    } 
 
 
     return (
         <div className={styles.container}>
           <form onSubmit={submitRegister} className={styles.box}>
-            <p className={styles.title}>Register</p>
+            <h1 className={styles.title}>Register</h1>
             <input name="name" type="text" onChange={handleRegister} placeholder="Your Name" className={styles.input} />
             <input name="email" type="text" onChange={handleRegister} placeholder="Your Email" className={styles.input} />
             <input name="password" type="text" onChange={handleRegister} placeholder="Your Password" className={styles.input} />
@@ -54,7 +61,7 @@ const Authenticate = () => {
             )}
           </form>
           <form onSubmit={submitLogin} className={styles.box}>
-            <p className={styles.title}>Login</p>
+            <h1 className={styles.title}>Login</h1>
             <input name="email" type="text" onChange={handleLogin} placeholder="Your Email" className={styles.input} />
             <input name="password" type="text" onChange={handleLogin} placeholder="Your Password" className={styles.input} />
             <button type="submit" className={styles.button}>Login</button>

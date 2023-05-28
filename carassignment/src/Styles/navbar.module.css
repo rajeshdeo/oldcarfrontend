@@ -4,6 +4,9 @@
     align-items: center;
     background-color: #f1f1f1;
     padding: 10px;
+    height: 80px;
+    font-size: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   
   .box a {
@@ -15,6 +18,6 @@
   }
   
   .box a:hover {
-    background-color: #ccc;
+    background-color: #6ab1eb;
   }
   

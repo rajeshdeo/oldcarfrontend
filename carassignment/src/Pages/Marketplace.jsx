@@ -22,7 +22,7 @@ const Marketplace = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.inputBox}>
+      {/* <div className={styles.inputBox}>
         <Filters setData={setData} data={store?.marketplace} from={"marketplace"} />
         <input
           onChange={(e) => setSearch(e.target.value)}
@@ -30,7 +30,7 @@ const Marketplace = () => {
           placeholder="Search here, which car you are interested in"
           className={styles.input}
         />
-      </div>
+      </div> */}
       {data?.map((car, index) => (
           <div className={styles.carItem} key={index}>
             <div className={styles.carImageContainer}>
