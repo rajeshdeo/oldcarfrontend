@@ -1,0 +1,51 @@
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .title {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .register_success {
+    color: blue;
+  }
+  
+  .register_failure {
+    color: red;
+  }
+  
+  .login_success {
+    color: blue;
+  }
+  
+  .login_failure {
+    color: blue;
+  }

@@ -1,0 +1,132 @@
+.inputBox{
+    width: 100%;
+    padding: 5px 50px;
+    display: flex;
+    gap: 10px;
+  }
+  .input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .carItem {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%;
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(66, 0, 0, 0.445);
+  }
+  
+  .carImageContainer {
+    flex: 0 0 40%;
+    position: relative;
+  }
+  
+  .carImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  
+  .carDetails {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .specs {
+    background-color: #f9f9f9;
+    height: 100%;
+    color: #333;
+  }
+  
+  .title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .descriptionList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .descriptionList li, .carDetails li {
+    color: #666;
+    margin-bottom: 5px;
+  }
+  .middle, .left {
+    background-color: #f9f9f9;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left {
+    background-color: #f9f9f9;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .colorList {
+    list-style-type: none;
+    display: flex;
+    gap: 4px;
+    margin: 0;
+    padding: 5px 0 10px 0;
+  }
+  
+  .colorItem {
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 50%;
+  }
+  
+  
+  .book_button {
+    border: none;
+    padding: 10px 0px;
+    width: 40%;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: not-allowed;
+  }
+  .book_button{
+    background-color: #3946ff;
+  }
+  
+  @media (max-width: 768px) {
+    .carItem {
+      flex-direction: column;
+    }
+  
+    .carImageContainer {
+      flex: 1;
+      height: 200px;
+      order: 2;
+    }
+  
+    .carDetails {
+      flex: 1;
+      order: 1;
+    }
+  }
